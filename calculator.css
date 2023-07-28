@@ -14,10 +14,11 @@
     background-image:linear-gradient(rgb(0,0,4,-0.15),rgb(0,0,0,0.85)),url(./pexels-nothing-ahead-3729557.jpg);
     background-size: cover;
     background-position: center;
-
+    
 }
 .calculator{
-    background: rgb(151, 71, 71);
+    background: linear-gradient(to right, #d74a77, #1D2671);
+    /* background: rgb(151, 71, 71); */
     padding: 20px ;
     border-radius: 10px;
     border:4px solid black;
@@ -35,6 +36,9 @@
     cursor: pointer;
     margin: 10px;
     /* border: 2px solid black; */
+}
+.calculator form input:hover{
+    transform: scale3d(1.1,1.1,1);
 }
  form .display{
     display: flex;
@@ -63,7 +67,8 @@ form input.operator{
     font-weight: bolder;
     border: 2px solid black;
     padding: 3px 2px;  
+    transition: 1s;
 }
-/* @media(max-width:700px){
-
-} */
+.container h1:hover{
+    transform: scale(1.2);
+}
